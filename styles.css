@@ -1,0 +1,99 @@
+body {
+    color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height:1.4em;
+    margin: auto;
+    width: 80%;
+    font-size:18px;
+}
+
+h1 {
+    line-height: 1.25em;
+}
+
+.mainnav li {
+    width: 90%;
+    box-sizing:border-box;
+    border: 5px solid rgb(177, 226, 241);
+    margin-bottom:15px;
+    background-color:rgb(208, 232, 240);
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(22, 191, 233);
+}
+
+h1, h2, p {
+    padding: 0 15px;
+    line-height: 1.2em;
+}
+
+.lightblue-border {
+    border: 5px solid rgb(177, 226, 241);
+}
+
+.boxmodel {
+    margin: 0 15px;
+    border: 10px dotted darkblue;
+    padding: 10px;
+}
+
+input, textarea, select {
+    margin-left: 200px;
+}
+
+#blue-background {
+    background-color: rgb(22, 191, 233);
+}
+
+.displayblock {
+    display: block;
+    padding: 25px;
+}
+
+.blogpost { 
+    width: 200px; border: 1px solid black; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#nieuw {
+    background-color: red;
+    align-self: flex-end;
+}
+
+footer {
+    padding: 15px;
+}
+
+/* Desktop aanpassingen middels media query*/
+@media (min-width: 1024px) {
+    .mainnav li {
+        float:left;
+        display:inline;
+        width:24%;
+        margin-right:10px;
+        border: 5px solid darkblue;
+    }
+    
+    a {
+        color: darkblue;
+    }
+
+    body {
+        font-size:16px;
+        line-height:2.0em;
+    }
+
+    #blue-background {
+        background-color: darkblue;
+    }
+
+}

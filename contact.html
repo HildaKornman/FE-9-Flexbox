@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--hier zet je de code in de head tags -->
+        <title> FE 9 CSS Flexbox </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body class="lightblue-border">
+        <header>
+            <!-- hier zet je de code in de body tags -->
+            <h1> Winc Academy Front End Development </h1>
+            <h2> Contact</h2>
+            <nav>
+                <ul class="mainnav">
+                    <li><a href="index.html"> <h2> Home </h2> </a></li>
+                    <li><a href="about.html"> <h2> Meer informatie </h2> </a></li>
+                    <li><a href="blog.html" > <h2> Blog </h2> </a></li>
+                    <li><a href="contact.html" target="_blank"> <h2> Contact </h2> </a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <h2>Publiceer je favoriete recept:</h2>
+            <form name="recept" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam: </label><br> <input type="text" name="Naam"/>
+                </p>
+                <p>
+                    <label>Email: </label><br> <input type="email" name="Email"/>
+                </p>
+                <p>
+                    <label>Tel: </label><br> <input type="tel" name="Tel"/>
+                </p>
+                <p>
+                    <label>Leeftijd: </label><br> <input type="number" name="Leeftijd" min="0"/>
+                </p>
+                <p>
+                    <label>Geboortedatum: </label><br> <input type="date" name="Geboortedatum"/>
+                </p>
+                <p>
+                    <label>Geslacht: </label> <br> 
+                        <input type="radio" id="vrouw" name="Geslacht" value="Vrouw"> <label for="vrouw">Vrouw</label><br>
+                        <input type="radio" id="man" name="Geslacht" value="Man"> <label for="man">Man</label><br>
+                        <input type="radio" id="Geen antwoord" name="Geslacht" value="Geen antwoord"> <label for="geen antwoord">Geen antwoord</label>
+                </p>
+                <p>
+                    <label>Favoriete keuken(s):  </label> <br> 
+                        <input type="checkbox" id="keuken1" name="keuken1" value="Frans"> <label for="Favoriete keuken:"> Frans</label><br>
+                        <input type="checkbox" id="keuken2" name="keuken2" value="Italiaans"> <label for="Favoriete keuken:"> Italiaans</label><br>
+                        <input type="checkbox" id="keuken3" name="keuken3" value="Spaans"> <label for="Favoriete keuken:"> Spaans</label><br>
+                        <input type="checkbox" id="keuken4" name="keuken4" value="Arabisch"> <label for="Favoriete keuken:"> Arabisch</label>
+                </p>
+                <p>
+                    <label>Favoriete kleur schort: </label><br> <input type="color" name="Kleur schort:"/>
+                </p>
+                <p>
+                    <label>Biografie: </label><br>
+                    <textarea name="Biografie:" rows="8" cols="25">
+                    </textarea>
+                </p>
+                <p>
+                    <label>Upload je recept: </label><br> <input type="file" name="Recept file:"/>
+                </p>
+                <p>
+                    <label for="receptenwebsite">URL recepten website: </label><br> <input type="url" id="receptenwebsite" name="receptenwebsite"/>
+                </p>
+                <p>
+                    <button type="reset">Reset</button> <button type="submit">Send</button>
+                </p>
+            </form>
+
+            <h2>Contactformulier:</h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam: </label><br> <input type="text" name="Name"/>
+                </p>
+                <p>
+                    <label>Mailadres: </label><br> <input type="email" name="Email"/>
+                </p>
+                <p>
+                    <label>Kies rol: </label><br> 
+                        <select name="role[]" multiple>
+                            <option value="student">Leader</option>
+                            <option value="docent">Follower</option>
+                    </select>
+                  </p>
+                <p>
+                    <label>Toelichting: </label><br>
+                <textarea name="message">
+                </textarea>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+        </main>
+        <footer id="blue-background">
+            Copy Winc Academy Front End Development
+        </footer>
+    </body>
+</html>
